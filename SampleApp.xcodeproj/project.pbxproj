@@ -79,13 +79,13 @@
 		0BA93BFB2279B6B300C37813 /* SampleApp */ = {
 			isa = PBXGroup;
 			children = (
+				0BA93C242279BAA900C37813 /* UIKitless */,
 				0BA93BFC2279B6B300C37813 /* AppDelegate.swift */,
 				0BA93BFE2279B6B300C37813 /* ViewController.swift */,
 				0BA93C002279B6B300C37813 /* Main.storyboard */,
 				0BA93C032279B6B400C37813 /* Assets.xcassets */,
 				0BA93C052279B6B400C37813 /* LaunchScreen.storyboard */,
 				0BA93C082279B6B400C37813 /* Info.plist */,
-				0BA93C1C2279B6F100C37813 /* MyClass.swift */,
 			);
 			path = SampleApp;
 			sourceTree = "<group>";
@@ -93,10 +93,26 @@
 		0BA93C102279B6B400C37813 /* SampleAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				0BA93C252279BAB400C37813 /* UIKitlessTests */,
 				0BA93C132279B6B400C37813 /* Info.plist */,
-				0BA93C1E2279B73900C37813 /* MyClassTests.swift */,
 			);
 			path = SampleAppTests;
+			sourceTree = "<group>";
+		};
+		0BA93C242279BAA900C37813 /* UIKitless */ = {
+			isa = PBXGroup;
+			children = (
+				0BA93C1C2279B6F100C37813 /* MyClass.swift */,
+			);
+			path = UIKitless;
+			sourceTree = "<group>";
+		};
+		0BA93C252279BAB400C37813 /* UIKitlessTests */ = {
+			isa = PBXGroup;
+			children = (
+				0BA93C1E2279B73900C37813 /* MyClassTests.swift */,
+			);
+			path = UIKitlessTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
