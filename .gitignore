@@ -4,4 +4,6 @@ xcuserdata/
 *.lock
 *~.nib
 build/
+.build
+./UIKitless/.build
 
