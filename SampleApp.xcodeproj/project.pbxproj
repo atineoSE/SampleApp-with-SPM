@@ -12,7 +12,8 @@
 		0BA93C022279B6B300C37813 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BA93C002279B6B300C37813 /* Main.storyboard */; };
 		0BA93C042279B6B400C37813 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BA93C032279B6B400C37813 /* Assets.xcassets */; };
 		0BA93C072279B6B400C37813 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BA93C052279B6B400C37813 /* LaunchScreen.storyboard */; };
-		0BA93C122279B6B400C37813 /* SampleAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA93C112279B6B400C37813 /* SampleAppTests.swift */; };
+		0BA93C1D2279B6F100C37813 /* MyClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA93C1C2279B6F100C37813 /* MyClass.swift */; };
+		0BA93C1F2279B73900C37813 /* MyClassTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA93C1E2279B73900C37813 /* MyClassTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,8 +35,9 @@
 		0BA93C062279B6B400C37813 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0BA93C082279B6B400C37813 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0BA93C0D2279B6B400C37813 /* SampleAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0BA93C112279B6B400C37813 /* SampleAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleAppTests.swift; sourceTree = "<group>"; };
 		0BA93C132279B6B400C37813 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0BA93C1C2279B6F100C37813 /* MyClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyClass.swift; sourceTree = "<group>"; };
+		0BA93C1E2279B73900C37813 /* MyClassTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyClassTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				0BA93C032279B6B400C37813 /* Assets.xcassets */,
 				0BA93C052279B6B400C37813 /* LaunchScreen.storyboard */,
 				0BA93C082279B6B400C37813 /* Info.plist */,
+				0BA93C1C2279B6F100C37813 /* MyClass.swift */,
 			);
 			path = SampleApp;
 			sourceTree = "<group>";
@@ -90,8 +93,8 @@
 		0BA93C102279B6B400C37813 /* SampleAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				0BA93C112279B6B400C37813 /* SampleAppTests.swift */,
 				0BA93C132279B6B400C37813 /* Info.plist */,
+				0BA93C1E2279B73900C37813 /* MyClassTests.swift */,
 			);
 			path = SampleAppTests;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 					};
 					0BA93C0C2279B6B400C37813 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = 0BA93BF82279B6B300C37813;
 					};
 				};
@@ -199,6 +203,7 @@
 			files = (
 				0BA93BFF2279B6B300C37813 /* ViewController.swift in Sources */,
 				0BA93BFD2279B6B300C37813 /* AppDelegate.swift in Sources */,
+				0BA93C1D2279B6F100C37813 /* MyClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,7 +211,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0BA93C122279B6B400C37813 /* SampleAppTests.swift in Sources */,
+				0BA93C1F2279B73900C37813 /* MyClassTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,6 +402,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WDVRK9UE68;
 				INFOPLIST_FILE = SampleAppTests/Info.plist;
@@ -407,6 +413,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.adriantineo.SampleAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SampleApp.app/SampleApp";
@@ -418,6 +425,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WDVRK9UE68;
 				INFOPLIST_FILE = SampleAppTests/Info.plist;
