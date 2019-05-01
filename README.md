@@ -1,4 +1,4 @@
-# SampleApp-with-SPM
+# SampleApp with SPM
 Example to demonstrate how to run UI-independent tests in an iOS project from the [Swift Package Manager](https://swift.org/package-manager/) (SPM).
 
 Based on the example by [Paul Samuels](https://twitter.com/paulio87) [here](https://www.paul-samuels.com/blog/2019/01/22/speeding-up-your-ios-swift-tests/).
